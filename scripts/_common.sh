@@ -9,7 +9,7 @@ pkg_dependencies="mediainfo dcraw p7zip"
 
 mach=`uname -m`
 
-sha256_arm64=89b662b321ea30d69bc67d603f807f1cac3ad96b34efdf76928e42822d4c1d6a
+sha256_arm64=FFE983E776500D24B305D307BB33181848886A98B46B03FD519D84C7199A2EA6
 sha256_armel=5cf3522442459aaef80deed1a40e673179ec59936ad3c16901d9a29d430342d4
 sha256_armhf=632de1a4a54ef1a88a2a45d38212f7463e95cd6185a709e047103ceea70d0bf7
 sha256_x86_64=55be296603b94a26c35906cba005509448b367a4bbe182d90958b5f14f088906
@@ -34,7 +34,7 @@ case "$mach" in
  			pkg_dependencies="$pkg_dependencies openjdk-8-jre" ;;
  "aarch64" ) mach="arm64"
  			sha256=$sha256_arm64
- 			pkg_dependencies="$pkg_dependencies openjdk-11-jre" ;;
+ 			pkg_dependencies="$pkg_dependencies openjdk-17-jre" ;;
  "x86_64" ) mach="x86_64"
  			sha256=$sha256_x86_64 ;;
  * ) mach="x86" 
